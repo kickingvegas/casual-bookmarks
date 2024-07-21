@@ -104,7 +104,7 @@ new-sprint: sync-development-with-main
 
 create-merge-development-branch: checkout-development
 	git checkout -b merge-development-to-main-$(TIMESTAMP)
-	git push --set-upstream origin merge-development-to-main-$(TIMESTAMP)k
+	git push --set-upstream origin merge-development-to-main-$(TIMESTAMP)
 
 
 ## Create GitHub pull request for development
