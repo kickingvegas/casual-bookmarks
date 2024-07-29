@@ -1,3 +1,5 @@
+[[https://melpa.org/#/casual-bookmarks][file:https://melpa.org/packages/casual-bookmarks-badge.svg]]
+
 * Casual Bookmarks
 An opinionated [[https://github.com/magit/transient][Transient]]-based porcelain for the Emacs [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Bookmarks.html][Bookmark]] list.
 
