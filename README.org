@@ -31,13 +31,18 @@ If installed via MELPA then add these lines to your Emacs initialization file wi
   (keymap-set bookmark-bmenu-mode-map "C-o" #'casual-bookmarks-tmenu)
 #+end_src
 
-If you use ~use-package~, here is the recipe for installing it.
+If you use ~use-package~, here is the recipe for installing and configuring it.
 #+begin_src elisp :lexical no
-  (require 'bookmarks)
+  (use-package bookmark
+    :ensure nil
+    :defer t)
   (use-package casual-bookmarks
     :ensure t
     :bind (:map bookmark-bmenu-mode-map
-                ("C-o" . casual-bookmarks-tmenu)))
+                ("C-o" . casual-bookmarks-tmenu)
+                ("S" . casual-bookmarks-sortby-tmenu)
+                ("J" . bookmark-jump))
+    :after (bookmark))
 #+end_src
 
 Casual requires Emacs 29.1+.
@@ -56,6 +61,7 @@ Casual Bookmarks also includes the keymap ~casual-bookmarks-main-menu~ which ins
 To enable this, add the following configuration to your initialization file.
 
 #+begin_src elisp :lexical no
+  (require 'casual-bookmarks)
   (easy-menu-add-item global-map '(menu-bar)
                       casual-bookmarks-main-menu
                       "Tools")
