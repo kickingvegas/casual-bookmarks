@@ -5,7 +5,7 @@
 ;; Author: Charles Choi <kickingvegas@gmail.com>
 ;; URL: https://github.com/kickingvegas/casual-bookmarks
 ;; Keywords: tools
-;; Version: 1.0.1
+;; Version: 1.0.2
 ;; Package-Requires: ((emacs "29.1") (casual-lib "1.1.0"))
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -28,6 +28,18 @@
 ;; INSTALLATION
 ;; (require 'casual-bookmarks) ;; optional
 ;; (keymap-set bookmark-bmenu-mode-map "C-o" #'casual-bookmarks-tmenu)
+
+;; Alternately with `use-package':
+;; (use-package bookmark
+;;   :ensure nil
+;;   :defer t)
+;; (use-package casual-bookmarks
+;;   :ensure t
+;;   :bind (:map bookmark-bmenu-mode-map
+;;               ("C-o" . casual-bookmarks-tmenu)
+;;               ("S" . casual-bookmarks-sortby-tmenu)
+;;               ("J" . bookmark-jump))
+;;   :after (bookmark))
 
 ;;; Code:
 (require 'bookmark)
