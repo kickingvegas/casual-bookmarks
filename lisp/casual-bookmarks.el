@@ -61,7 +61,8 @@
     ("r" "Rename…" bookmark-bmenu-rename :transient nil)
     ("R" "Relocate…" bookmark-bmenu-relocate :transient nil)
     ("x" "Delete" bookmark-bmenu-execute-deletions :transient t)
-    ("w" "Show location" bookmark-bmenu-locate :transient t)]
+    ("w" "Show location" bookmark-bmenu-locate :transient t)
+    ("+" "Add bookmark" casual-set-bookmark-in-buffer :transient t)]
 
    ["Mark"
     ("m" "Mark" bookmark-bmenu-mark :transient t)
@@ -131,6 +132,12 @@
   [:class transient-row
           (casual-lib-quit-one)
           (casual-lib-quit-all)])
+
+(defun casual-set-bookmark-in-buffer (buffer-to-bookmark)
+  "Prompt the user for a buffer, and set a bookmark to that buffer."
+  (interactive "B")
+  (with-current-buffer buffer-to-bookmark
+    (bookmark-set)))
 
 (defun casual-bookmarks-sortby-name ()
   "Sort bookmark list by name."
