@@ -1,7 +1,7 @@
 [[https://melpa.org/#/casual-bookmarks][file:https://melpa.org/packages/casual-bookmarks-badge.svg]]
 
 * Casual Bookmarks
-An opinionated [[https://github.com/magit/transient][Transient]]-based porcelain for the Emacs [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Bookmarks.html][Bookmark]] list.
+An opinionated [[https://github.com/magit/transient][Transient]]-based user interface for the Emacs [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Bookmarks.html][Bookmark]] list.
 
 [[file:docs/images/casual-bookmarks-screenshot.png]]
 
@@ -119,21 +119,21 @@ If you enjoy using Casual Bookmarks, consider making a modest financial contribu
 [[https://www.buymeacoffee.com/kickingvegas][file:docs/images/default-yellow.png]]
 
 * See Also
-Casual Bookmarks is part of a suite of porcelains for different Emacs packages.
+Casual Bookmarks is part of a suite of user interfaces for different Emacs packages.
 
-To get all current and future Casual porcelains, please install [[https://github.com/kickingvegas/casual-suite][Casual Suite]] from [[https://melpa.org/#/casual-suite][MELPA]].
+To get all current and future Casual user interfaces, please install [[https://github.com/kickingvegas/casual-suite][Casual Suite]] from [[https://melpa.org/#/casual-suite][MELPA]].
 
-Porcelains currently supported by Casual are listed below:
+User Interfaces currently supported by Casual are listed below:
 
 - [[https://github.com/kickingvegas/casual-isearch][Casual I-Search]] - a Transient menu for I-Search.
-- [[https://github.com/kickingvegas/casual-dired][Casual Dired]] - a Transient porcelain for the Dired file manager.
-- [[https://github.com/kickingvegas/casual-info][Casual Info]] - a Transient porcelain for Info.  
-- [[https://github.com/kickingvegas/casual-calc][Casual Calc]] - a Transient porcelain for Calc.
-- [[https://github.com/kickingvegas/casual-ibuffer][Casual IBuffer]] - a Transient porcelain for IBuffer.
-- [[https://github.com/kickingvegas/casual-re-builder][Casual RE-Builder]] - a Transient porcelain for RE-Builder.  
-- [[https://github.com/kickingvegas/casual-avy][Casual Avy]] - a Transient porcelain for Avy.
+- [[https://github.com/kickingvegas/casual-dired][Casual Dired]] - a Transient user interface for the Dired file manager.
+- [[https://github.com/kickingvegas/casual-info][Casual Info]] - a Transient user interface for Info.  
+- [[https://github.com/kickingvegas/casual-calc][Casual Calc]] - a Transient user interface for Calc.
+- [[https://github.com/kickingvegas/casual-ibuffer][Casual IBuffer]] - a Transient user interface for IBuffer.
+- [[https://github.com/kickingvegas/casual-re-builder][Casual RE-Builder]] - a Transient user interface for RE-Builder.  
+- [[https://github.com/kickingvegas/casual-avy][Casual Avy]] - a Transient user interface for Avy.
 
-Users who prefer finer grained control over package installation can install each porcelain above individually.
+Users who prefer finer grained control over package installation can install each user interface above individually.
 
 * Acknowledgments
 A heartfelt thanks to all the contributors to Bookmarks and [[https://github.com/magit/transient][Transient]]. Casual Bookmarks would not be possible without your efforts.

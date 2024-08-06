@@ -23,7 +23,7 @@
 
 ;;; Commentary:
 
-;; Casual Bookmarks is an opinionated Transient-based porcelain for Emacs Bookmarks.
+;; Casual Bookmarks is an opinionated Transient-based user interface for Emacs Bookmarks.
 
 ;; INSTALLATION
 ;; (require 'casual-bookmarks) ;; optional
@@ -60,9 +60,9 @@
     ("v" "Open marked"  bookmark-bmenu-select :transient nil)
     ("r" "Rename…" bookmark-bmenu-rename :transient nil)
     ("R" "Relocate…" bookmark-bmenu-relocate :transient nil)
-    ("x" "Delete" bookmark-bmenu-execute-deletions :transient t)
-    ("w" "Show location" bookmark-bmenu-locate :transient t)
-    ("+" "Add bookmark" casual-set-bookmark-in-buffer :transient t)]
+    ("x" "Delete marked D" bookmark-bmenu-execute-deletions :transient t)
+    ("+" "Add…" casual-bookmarks-add-bookmark-via-buffer :transient t)
+    ("w" "Show location" bookmark-bmenu-locate :transient t)]
 
    ["Mark"
     ("m" "Mark" bookmark-bmenu-mark :transient t)
@@ -133,10 +133,10 @@
           (casual-lib-quit-one)
           (casual-lib-quit-all)])
 
-(defun casual-set-bookmark-in-buffer (buffer-to-bookmark)
-  "Prompt the user for a buffer, and set a bookmark to that buffer."
+(defun casual-bookmarks-add-bookmark-via-buffer (buffer)
+  "Set a bookmark for an interactively selected BUFFER."
   (interactive "B")
-  (with-current-buffer buffer-to-bookmark
+  (with-current-buffer buffer
     (bookmark-set)))
 
 (defun casual-bookmarks-sortby-name ()
