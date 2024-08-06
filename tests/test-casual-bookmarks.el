@@ -40,6 +40,7 @@
          (casualt-suffix-test-vector "r" #'bookmark-bmenu-rename)
          (casualt-suffix-test-vector "R" #'bookmark-bmenu-relocate)
          (casualt-suffix-test-vector "x" #'bookmark-bmenu-execute-deletions)
+         (casualt-suffix-test-vector "+" #'casual-bookmarks-add-bookmark-via-buffer)
          (casualt-suffix-test-vector "w" #'bookmark-bmenu-locate)
 
          (casualt-suffix-test-vector "m" #'bookmark-bmenu-mark)

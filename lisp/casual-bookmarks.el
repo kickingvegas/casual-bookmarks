@@ -5,7 +5,7 @@
 ;; Author: Charles Choi <kickingvegas@gmail.com>
 ;; URL: https://github.com/kickingvegas/casual-bookmarks
 ;; Keywords: tools
-;; Version: 1.0.2
+;; Version: 1.1.0
 ;; Package-Requires: ((emacs "29.1") (casual-lib "1.1.0"))
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -23,7 +23,7 @@
 
 ;;; Commentary:
 
-;; Casual Bookmarks is an opinionated Transient-based porcelain for Emacs Bookmarks.
+;; Casual Bookmarks is an opinionated Transient-based user interface for Emacs Bookmarks.
 
 ;; INSTALLATION
 ;; (require 'casual-bookmarks) ;; optional
@@ -60,7 +60,8 @@
     ("v" "Open marked"  bookmark-bmenu-select :transient nil)
     ("r" "Rename…" bookmark-bmenu-rename :transient nil)
     ("R" "Relocate…" bookmark-bmenu-relocate :transient nil)
-    ("x" "Delete" bookmark-bmenu-execute-deletions :transient t)
+    ("x" "Delete marked D" bookmark-bmenu-execute-deletions :transient t)
+    ("+" "Add…" casual-bookmarks-add-bookmark-via-buffer :transient t)
     ("w" "Show location" bookmark-bmenu-locate :transient t)]
 
    ["Mark"
@@ -131,6 +132,12 @@
   [:class transient-row
           (casual-lib-quit-one)
           (casual-lib-quit-all)])
+
+(defun casual-bookmarks-add-bookmark-via-buffer (buffer)
+  "Set a bookmark for an interactively selected BUFFER."
+  (interactive "B")
+  (with-current-buffer buffer
+    (bookmark-set)))
 
 (defun casual-bookmarks-sortby-name ()
   "Sort bookmark list by name."
