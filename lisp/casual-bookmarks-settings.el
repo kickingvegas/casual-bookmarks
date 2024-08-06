@@ -45,7 +45,7 @@
   (customize-group "bookmark"))
 
 (defun casual-bookmarks-about-bookmarks ()
-  "Casual Bookmarks is a Transient menu for Bookmarks.
+  "Casual Bookmarks is a Transient user interface for Bookmarks.
 
 Learn more about using Casual Bookmarks at our discussion group on GitHub.
 Any questions or comments about it should be made there.
