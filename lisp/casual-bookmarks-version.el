@@ -22,7 +22,7 @@
 
 ;;; Code:
 
-(defconst casual-bookmarks-version "1.1.2"
+(defconst casual-bookmarks-version "1.1.3-rc.1"
   "Casual Bookmarks Version.")
 
 (defun casual-bookmarks-version ()
