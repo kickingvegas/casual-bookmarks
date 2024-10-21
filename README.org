@@ -1,4 +1,11 @@
-[[https://melpa.org/#/casual-bookmarks][file:https://melpa.org/packages/casual-bookmarks-badge.svg]]
+* NOTICE
+
+This package has been superseded by the package [[https://github.com/kickingvegas/casual][casual]]. Please install the package ~casual~ from either [[https://melpa.org/#/casual][MELPA]] or [[https://stable.melpa.org/#/casual][MELPA stable]].
+
+Upon installation and upgrade of ~casual~, this package will be uninstalled from your Emacs configuration. Please revisit your configuration of Casual Bookmarks in your initialization file(s) accordingly.
+
+This repository should be treated as an archive. All future development on Casual Bookmarks will be done in the [[https://github.com/kickingvegas/casual][Casual repository]].
+
 
 * Casual Bookmarks
 An opinionated [[https://github.com/magit/transient][Transient]]-based user interface for the Emacs [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Bookmarks.html][Bookmark]] list.
